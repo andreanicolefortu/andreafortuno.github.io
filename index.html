@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/logo.png">
+    <title>Well-Planted</title>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="app" class="container">
+        <nav class="navbar sticky-navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" @click="toggleNavbar">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+                <a class="navbar-item" href="#">
+                   <h1 class="title">
+                    Well-Planted
+                  </h1>
+                </a>
+            </div>
+
+            <div class="navbar-menu" :class="{ 'is-active': isNavbarActive }">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#home">
+                        Home
+                    </a>
+                    <a class="navbar-item" href="#about">
+                        About
+                    </a>
+
+                    <a class="navbar-item" href="#gallery">
+                        Gallery
+                    </a>
+
+                    <a class="navbar-item" href="#plantcare">
+                        Plant Care
+                    </a>
+
+                    <a class="navbar-item" href="#contact">
+                        Contact Us
+                    </a>
+                    
+                    <a class="navbar-item" href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a class="navbar-item" href="#">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="section" id="home">
+            <!-- Great Little Giveaway Section with Image -->
+            <section id="home" class="section home-section">
+                <div class="columns">
+                    <div class="column is-one-thirds">
+                        <br>
+                        <br>
+                        <h1 class="giveaway-heading">Great little giveaway <br> for your most special day</h1>
+                        <p>"Discover the green revolution with our succulent giveaways! Embrace nature's charm while reaping the benefits of low-maintenance plants. Our giveaways not only add beauty to your space but also promote eco-conscious living!"</p>
+                        <a href="#gallery">
+                        <button class="button1">  Explore  </button>
+                    </a>
+                    </div>
+                    <div class="column">
+                        <img src="assets/img/home.png" alt="Giveaway Image">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+            <!-- About Us Section -->
+            <div class="section" id="about">
+    <section id="about" class="section about-section">
+        <h2 class="about-title">About Us</h2>
+        <div class="columns">
+            <img class="about-image" src="assets/img/about.png" alt="">
+            <div class="column">
+                <br><br>
+                <p>Welcome to Well-Planted! At Well-Planted, we're passionate about spreading joy and happiness through the beauty of succulent plants.
+                <br><br>
+                Our journey began with a simple love for these resilient and charming plants during pandemic, and it has since evolved into a mission to share their natural elegance with the world.
+                <br><br>
+                What sets us apart is our dedication to providing not just a product, but an experience. Whether you're celebrating a birthday, wedding, or any special occasion, our succulent plants serve as the perfect symbol of growth, love, and appreciation. 
+                <br><br>
+                We also customized the colors of pots based on the theme of the occasion. We make sure that our products really blend on any occasion.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+      <!-- Gallery Section -->
+      <div class="section" id="gallery">
+    <section id="gallery" class="section gallery-section">
+    <h2 class="subtitle">Gallery</h2>
+    <div class="columns is-multiline">
+        <div class="column is-one-third">
+            <div class="card">
+                    <figure class="image is-4by3">
+                        <img src="assets/img/handle.jpg" alt="Plant">
+                    </figure>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">Succulent in White Plastic Pot</p>
+                            <p class="price is-6">₱80</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        Plastic white pot that is covered with burlap string, it also have a hand-made burlap handle
+                    </div>
+                    <br>
+                    <a>
+                        <button class="button">View More</button>
+                    </a>
+                </div>
+            </div>
+        </a>
+        </div>
+        <div class="column is-one-third"
+        >
+            <div class="card">
+                    <figure class="image is-4by3">
+                        <img src="assets/img/box.png" alt="Plant">
+                    </figure>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">Succulent in a Box</p>
+                            <p class="price is-6">₱80-₱100</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        The color of the box can be customized based on the theme of your occasion. You can choose with plastic or cement pot
+                    </div>
+                    <br>
+                    <a>
+                        <button class="button">View More</button>
+                    </a>
+                </div>
+            </div>
+        </a>
+        </div>
+        <div class="column is-one-third">
+            <div class="card">
+                    <figure class="image is-4by3">
+                        <img src="assets/img/mini.jpg" alt="Plant">
+                    </figure>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">Succulent in Mini Pot</p>
+                            <p class="price is-6">₱50</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        Our mini pot is hand-made with love, it is meticulously curated to avoid roughness from the cement.
+                    </div>
+                    <br>
+                    <a>
+                        <button class="button">View More</button>
+                    </a>
+                </div>
+            </div>
+        </a>
+        </div>
+    </div>
+</section>
+</div>
+
+        <!-- PlantCare Section -->
+        <section id="plantcare" class="section home-section">
+        <h2 class="plantcare-subtitle">Plant Care</h2>
+        <br>
+        <div class="columns is-multiline">
+            <div class="column is-one-quarter" v-for="(plant, index) in plants" :key="index">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img :src="plant.image" alt="Plant">
+                        </figure>
+                    </div>
+                    <div class="card-content plant-card">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">{{ plant.name }}</p>
+                            </div>
+                        </div>
+                        <div class="content" v-bind:style="{ height: 'auto' }">
+                            {{ plant.description }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+     <!-- Contact Section -->
+     <div class="section" id="contact">
+        <section id="contact" class="section contact-section">
+        <h2 class="subtitleee">Contact Us</h2>
+        <br>
+        <div class="columns">
+            <div class="column contact-column">
+                <h1> Contact Information </h1>
+                <br>
+                <h6> Fill up the form and our team will get back to you shortly</h6>
+                <br>
+                <p><i class="fas fa-envelope"></i> Email: wellplantedgiveaways@gmail.com</p>
+                <p><i class="fab fa-facebook"></i> Facebook: <a href="https://www.facebook.com/wellplantedgiveaways.ph">Well-Planted</a></p>
+                <p><i class="fas fa-phone"></i> Contact Number: +63912-345-6789</p>
+                <p><i class="fas fa-map-marker-alt"></i> Location: 143 Love St. General Trias City, Cavite, 4107</p>
+                <br>
+                <br>
+            </div>
+            <div class="column">
+            <form @submit.prevent="submitForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" v-model="formData.name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" v-model="formData.email" required><br><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" v-model="formData.message" required></textarea><br><br>
+                
+                <button class="contact-button" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
